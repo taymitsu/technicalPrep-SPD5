@@ -1,30 +1,42 @@
-class MinStack {
-public:
-    MinStack() {
-        
-    }
+class MinStack: 
+  
+  def __init__(self):
+    self.stack = []
+    self.min = []
+
+    def push(self, val: int) -> None:
+      #print('PUSH')
+      #Checking if stack is empty loop
+      
+      #if empty
+
+      #if not empty/else:
+
     
-    void push(int val) {
-        
-    }
+    def pop(self) -> None:
+      #print('POP')
+      self.stack.pop()
+      self.min.pop()
+
+
+    def top(self) -> int:
+      #print('TOP')
+      return self.stack[-1]
+
     
-    void pop() {
-        
-    }
+    def getMin(self) -> int:
+      #print('MIN')
+      return min(self.stack)
+
     
-    int top() {
-        
-    }
-    
-    int getMin() {
-        
-    }
-};
+
+
+
 
 
 #Your MinStack object will be instantiated and called as such:
-#MinStack* obj = new MinStack();
-#obj->push(val);
-#obj->pop();
-#int param_3 = obj->top();
-#int param_4 = obj->getMin();
+#obj = minStack()
+#obj.push(val)
+#obj.pop()
+#param_3 = obj.top()
+#param_4 = obj.getMin()
